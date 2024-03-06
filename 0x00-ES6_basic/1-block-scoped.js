@@ -1,6 +1,6 @@
 export default function taskBlock(trueOrFalse) {
-  let task;
-  let task2; // Declare variables at the top of the function
+  var task;
+  var task2; // Declare variables at the top of the function
 
   task = false;
   task2 = true;
