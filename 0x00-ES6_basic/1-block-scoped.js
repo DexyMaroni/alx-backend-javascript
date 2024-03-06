@@ -1,14 +1,15 @@
 export default function taskBlock(trueOrFalse) {
-  var task;
-  var task2; // Declare variables at the top of the function
-
-  task = false;
-  task2 = true;
+  var task = false;
+  var task2 = true;
 
   if (trueOrFalse) {
-    task = true;
-    task2 = false;
+    // Enclosing the conditional block inside its own scope
+    {
+      var task = true;
+      var task2 = false;
+    }
   }
 
   return [task, task2];
 }
+
